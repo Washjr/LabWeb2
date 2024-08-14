@@ -1,0 +1,19 @@
+body {
+    background: lightblue;
+}
+
+h1 {
+    color: #FF0000;
+}
+
+.classe {
+    text-align: center;
+}
+
+#id {
+    text-align: center;
+}
+
+.menu {
+    color: blue;
+}
