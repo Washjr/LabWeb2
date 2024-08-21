@@ -1,19 +1,59 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Minha primeira pagina</title>    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         
-        <script src=""></script>
+        <script src="script.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <title>Minha primeira pagina</title>    
+
     </head>
 
     <body>
-        <h1 class="classe">Ola mundo1111</h1>
+        <h1 class="classe">Ola mundo</h1>
+        <p id="currentTime"></p>
+        <script src="script.js"></script>
+
+        <div class="container">
+            <form class="form" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite o seu telefone">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Digite o seu email">
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto da mensagem">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-default" name="enviar">
+                </div>
+            </form>
+        </div>
 
         <br>
         <hr>
         <!--AAAA-->
 
-        <h1>Ola mundo222</h1>
+        <h1>Ola mundo2</h1>
         <p>Tag de paragrafo</p>
         <span>..</span>
         <strong>aa</strong>
@@ -87,6 +127,16 @@
 
         <em>
     </body>
+
+    <script>
+        $("#nome").blur(function(){
+            if($("#nome").val() ==""){
+                $("#nome").parents("div:first").addclass("has-error");
+            } else {
+                $("#nome").parents("div:first").removeclass("has-error");
+            }
+        });
+    </script>
 
     <footer>
 
